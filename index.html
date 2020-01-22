@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- The page title that appears on the tab of the browser -->
+    <title>Sundance Tollers</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Description of the page">
+    <!-- Bootstrap links to have a responsive layout for our site -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstra
+p/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquer
+y.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/boots
+trap.min.js"></script>
+    <!-- Our style sheet where we can customize parts of our page -->
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+    <!-- Bootstrap container for all of our content -->
+    <div class="container-fluid">
+        <!-- A Bootstrap full-width row -->
+        <div class=row>
+            <div class="col-sm-12">
+                <h1 id="mainHeader">Sundance Tollers</h1>
+            </div>
+        </div>
+        <div class=row>
+            <div class="col-sm-12">
+                <img id=coverimage src="Dog.jpg" alt="Dog">
+            </div>
+        </div>
+        <br>
+        <div class=row>
+            <div class="exampleColumn fullColumn" class="col-sm-12"> Nova Scotia </div>
+        </div>
+        <br>
+        <div class=row>
+            <div class="exampleColumn halfColumn col-sm-6"> Cat </div>
+            <div class="exampleColumn halfColumn col-sm-6"> Dog </div>
+        </div>
+        <br>
+
+        <div class=row>
+            <div id="quarterColumn" class="exampleColumn col-sm-3"> Fish </div>
+            <div id="threeQuarterColumn" class="exampleColumn col-sm-9"> Bird </div>
+        </div>
+        <br>
+        <div class=row>
+            <div class="exampleColumn col-sm-2 col-sm-offset-1 fiveCols"> col </div>
+            <div class="exampleColumn col-sm-2 fiveCols"> col </div>
+            <div class="exampleColumn col-sm-2 fiveCols"> col </div>
+            <div class="exampleColumn col-sm-2 fiveCols"> col </div>
+            <div class="exampleColumn col-sm-2 fiveCols"> col </div>
+        </div>
+
+        <br>
+        <div class=row>
+            <div class="col-sm-12">
+                <button class="btn btn-default" id=pickAColorButton onclick=randomColor()>
+                    Get Random color
+                </button>
+                <br>
+                <p id="colorCode"></p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function randomColor() {
+            //get random red green and blue amounts = rgb values each range 0-255
+            var red = Math.floor(Math.random() * 256);
+            var green = Math.floor(Math.random() * 256);
+            var blue = Math.floor(Math.random() * 256);
+          
+            //assign it to the background color of pickacolor div
+            var divtoedit = document.getElementById('pickAColorButton');
+            divtoedit.style.backgroundColor =
+                'rgb(' + red + ',' + green + ',' + blue + ')';
+           
+            //set the text to display the color information
+            document.getElementById('colorCode').innerHTML =
+                'rgb(' + red + ',' + green + ',' + blue + ')';
+        }
+</script>
+
+</body >
+
+</html >

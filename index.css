@@ -1,0 +1,45 @@
+#coverimage {
+    width:100%;
+    height: 80vh;
+    object-fit: cover;
+}
+#mainHeader {
+    color: #54848C;
+    font-size: 4em;
+    font-family: 'Georgia';
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.exampleColumn {
+    background-color: #999288;
+    border: 10px solid #2F2618;
+    color: white;
+    font-weight: bold;
+    font-size:2em;
+    text-align: center;
+}
+
+#quarterColumn {
+    background-color: #999288;
+}
+
+#threeQuarterColumn {
+    background-color: #999288;
+}
+
+.fiveCols {
+    background-color: #54848C;
+    border: 10px solid #2F2618;
+}
+
+#pickAColorButton {
+    margin: 40px auto 0px auto;
+    display: block;
+}
+
+#colorCode {
+    color: #d3d3d3;
+    text-align: center;
+}
